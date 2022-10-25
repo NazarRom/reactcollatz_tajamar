@@ -38,10 +38,10 @@ if (oldProps.numero != this.props.numero){
     return (
       <div>
         <h1>{this.props.numero}</h1>
-      <ul>
+      <ul className='list-group'>
         {
           this.state.numeros.map((numero,index)=>{
-            return(<li key={index}>{numero}</li>)
+            return(<li className='list-group-item list-group-item-info' key={index}>{numero}</li>)
           })
         }
         </ul>
